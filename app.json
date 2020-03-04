@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/activities/activities",
+    "pages/activity_detail/activity_detail",
+    "pages/paper_detail/paper_detail",
+    "pages/person/person",
+    "pages/logs/logs"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "奔跑吧，少年",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath":"pages/activities/activities",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/person/person", 
+        "text": "个人"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+<!--pages/activities/activities.wxml-->
+
+<view class="content" wx:for="{{activities}}" wx:key="*this">
+    <view class="content-text" bindtap="toact" data-actid="{{item.id}}">
+      <text class="content-text-title">{{item.title}}</text>
+      <text class="content-text-detail">{{item.showTime}}</text>
+      <text class="content-text-detail">{{item.showJoinNumber}}</text>
+      <text class="content-text-detail">{{item.showType}}</text>
+    </view>
+    <view class="content-images" bindtap="toact" data-actid="{{item.id}}">
+      <image src="{{item.showUrl}}" mode="aspectFill"></image>
+    </view>
+</view>

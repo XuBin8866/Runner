@@ -1,0 +1,18 @@
+<!--pages/papers/papers.wxml-->
+<view class="">
+  <view class="list-item" wx:for="{{paper}}">
+    <navigator url="../paper_detail/paper_detail?id={{item.id}}">
+      <view class="list-item-images">
+        <image src="{{item.showUrl}}" class="list-item-images-img"></image>
+      </view>
+      <view class="list-item-text">
+        <view class="list-item-text-title">
+          <text>{{item.title}}</text>
+        </view>
+        <view class="list-item-text-content">
+          <text>{{item.content}} </text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

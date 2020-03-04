@@ -1,0 +1,28 @@
+<!--pages/paper_detail/paper_detail.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="header-title">
+      <text>{{paper_detail.title}}</text>
+    </view>
+    <view class="header-author">
+      <text></text>
+    </view>
+    <view class="header-time">
+      <text>发布时间   {{paper_detail.time}}</text>
+    </view>
+  </view>
+  <view class="content">
+    <image src="{{paper_detail.showUrl}}" mode="aspectFill"></image>
+    <text>{{paper_detail.content}}</text>
+  </view>
+
+
+
+  <view class="footer">
+
+
+
+  </view>
+
+
+</view>

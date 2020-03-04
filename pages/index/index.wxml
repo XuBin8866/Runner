@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="selection">
+    <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000" class="top-swiper">
+      <block wx:for="{{swiper}}" wx:key="*this">
+        <swiper-item>
+          <navigator url="../paper_detail/paper_detail?id={{item.id}}">
+            <view class="swiper-item {{item.showUrl}}">
+              <image src="{{item.showUrl}}" mode="widthFix"></image>
+            </view>
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="selection">
+    <view class="header">
+      <text>最新活动</text>
+      <view bindtap="toActivities">
+        <text style="color:green;font-size:10px">更多活动</text>
+      </view>
+    </view>
+    <navigator url="../activity_detail/activity_detail?id={{lastActivity.id}}">
+      <view class="content">
+        <view class="content-text">
+          <text class="content-text-title">{{lastActivity.title}}</text>
+          <text class="content-text-detail">{{lastActivity.showTime}}</text>
+          <text class="content-text-detail">{{lastActivity.showJoinNumber}}已参加</text>
+          <text class="content-text-detail">{{lastActivity.showAddress}}</text>
+        </view>
+        <view class="content-images">
+          <image src="{{lastActivity.showUrl}}" mode="aspectFill"></image>
+        </view>
+      </view>
+    </navigator>
+    <view class="selection">
+      <view class="header">
+        <text>运动指南</text>
+        <navigator url="../papers/papers">
+          <text style="color:green;font-size:10px">更多文章</text>
+        </navigator>
+      </view>
+      <view class="list-item" wx:for="{{paper}}">
+        <navigator url="../paper_detail/paper_detail?id={{item.id}}">
+          <view>
+            <view class="list-item-images">
+              <image src="{{item.showUrl}}" class="list-item-images-img"></image>
+            </view>
+            <view class="list-item-text">
+              <view class="list-item-text-title">
+                <text>{{item.title}}</text>
+              </view>
+              <view class="list-item-text-content">
+                <text>{{item.content}} </text>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+
+  </view>
+</view>

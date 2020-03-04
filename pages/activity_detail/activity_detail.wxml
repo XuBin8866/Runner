@@ -1,0 +1,84 @@
+<!--pages/activity_detail/activity_detail.wxml-->
+<view class="container">
+  <view class="content">
+    <view class="content-images">
+      <image src="{{act_detail.showUrl}}" mode="aspectFill"></image>
+    </view>
+    <view class="content-text">
+      <text class="content-text-title">{{act_detail.title}}</text>
+      <text class="content-text-detail">积分：{{act_detail.rank}}</text>
+      <text class="content-text-detail">地点：{{act_detail.showAddress}}</text>
+    </view>
+    <view class="content-info">
+      <view class="content-info-number">
+        <text decode="{{true}}">可参加人数:{{act_detail.totalNumber}}&nbsp;&nbsp;&nbsp;已报名:{{sign_number}}&nbsp;&nbsp;&nbsp;已签到:{{act_detail.RegisterNumber}}  </text>
+      </view>
+      <view class="content-info-if">
+        <text wx:if="{{act_detail.isVerify}}">报名需审核</text>
+        <text wx:else>报名无需审核</text>
+
+      </view>
+      <view class="line"></view>
+      <view class="content-info-time">
+        <text decode="{{true}}">报名：&nbsp;&nbsp;{{act_detail.signinTime}}</text>
+        <text decode="{{true}}">活动：&nbsp;&nbsp;{{act_detail.activityTime}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="state">
+    <view class="state-title">
+      <text>状态</text>
+
+    </view>
+    <view class="line2"></view>
+    <view class="state-symbol">
+      <view class="state-symbol-item">
+        <view wx:if="{{sign}}">
+          <icon size="23" type="success" role="img"></icon>
+        </view>
+        <view wx:else>
+          <icon size="23" type="circle" role="img"></icon>
+        </view>
+        <text>报名</text>
+      </view>
+      <view class="state-symbol-item">
+        <view wx:if="{{register}}">
+          <icon size="23" type="success" role="img"></icon>
+        </view>
+        <view wx:else>
+          <icon size="23" type="circle" role="img"></icon>
+        </view>
+        <text>签到</text>
+      </view>
+      <view class="state-symbol-item">
+        <view wx:if="{{finish}}">
+          <icon size="23" type="success" role="img"></icon>
+        </view>
+        <view wx:else>
+          <icon size="23" type="circle" role="img"></icon>
+        </view>
+        <text>结束</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="details">
+    <view class="details-title">
+      <text>详情</text>
+
+    </view>
+    <view class="line2"></view>
+    <view class="details-info">
+      <text decode="{{true}}">&nbsp;&nbsp;{{act_detail.details}}</text>
+    </view>
+  </view>
+  <view class="signbtn">
+    <view wx:if="{{sign}}">
+      <button class="weui-btn" type="default" role="button" aria-disabled="false" bindtap="hasSignClick">您已报名</button>
+    </view>
+    <view wx:else>
+      <button class="weui-btn" type="primary" role="button" aria-disabled="{{sign}}" bindtap="signClick">我要报名</button>
+    </view>
+
+  </view>
+</view>
