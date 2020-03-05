@@ -1,10 +1,10 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/user/user",
     "pages/activities/activities",
     "pages/activity_detail/activity_detail",
     "pages/paper_detail/paper_detail",
-    "pages/person/person",
     "pages/logs/logs"
 
   ],
@@ -27,7 +27,7 @@
         "text": "活动"
       },
       {
-        "pagePath": "pages/person/person", 
+        "pagePath": "pages/user/user", 
         "text": "个人"
       }
     ]

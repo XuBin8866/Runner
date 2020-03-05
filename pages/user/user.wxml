@@ -1,0 +1,109 @@
+<!--pages/user/user.wxml-->
+<!--pages/myHome/myHome.wxml-->
+
+<!-- 个人中心一共有4个view  个人信息，活动，积分，我的报告 -->
+<view class="myPerson" >
+    <!-- 个人信息 -->
+    <view><image src="{{myPicture}}" class="myPicture"></image></view>
+    <view class="name">
+        <view >
+          <text class="myText">{{stuId}}</text>
+        </view>
+        <view class="step">     
+          <text class="myText">姓名：</text>
+          <text class="myText">{{stuName}}</text>
+        </view>     
+    </view>
+    <view  class="name">
+        <text class="myText">今日步数:</text>
+        <view class="step">
+            <text class="myText">{{step}}</text>
+        </view>
+    </view>
+   
+   
+</view>
+
+<view class="action3">
+    <!-- 活动 -->
+    <view class="action2"><text class="acText">三走活动</text></view>
+    <view class="action1">
+        <view class="action">
+          <text>已报名活动</text>
+        </view>
+        <view class="action">
+            <text>已参加活动</text>
+        </view >
+        <view class="action">
+            <text>我创建的活动</text>
+        </view>
+        <view class="action">
+            <text>创建活动</text>
+        </view>
+    </view>
+</view>
+
+<view class="inter3">
+    <!-- 积分 -->
+    <view class="action2"><text class="acText">我的战绩</text></view>
+    <view class="inter1">
+    
+        <view class="inter"> 
+          <text>运动积分</text>
+          <view class="mark">
+               <text>{{moInter}}</text>
+               <image src="{{markPicture}}" class="markPicture"></image>
+          </view>
+        </view>
+        <view class="inter">
+          <text>活动积分</text>
+          <view class="mark">
+               <text>{{acInter}}</text>
+               <image src="{{markPicture}}" class="markPicture"></image>
+          </view>
+         
+        </view>
+        <view class="inter">
+          <text>积分排行</text>
+          <view class="mark">
+               <text>{{rnkInter}}</text>
+               <image src="{{markPicture}}" class="markPicture"></image>
+          </view>       
+        </view>
+        
+    </view>
+
+</view>
+
+<view class="report2">
+    <!-- 我的报告 -->
+    <view class="action2"><text class="acText">我的报告</text></view>
+    <view class="report1">
+        <view class="report">
+             <text>昨日活动报告</text>
+             <text>上周活动报告</text>
+        </view>
+    </view>
+   
+</view>
+<view>
+    <view class="action2"><text class="acText">每日打卡</text></view>
+     <view class="report">
+             <text>早检打卡</text>
+    </view>
+</view>
+
+
+<view class="report2">
+    <!-- 我的秘密 -->
+    <view class="action2"><text class="acText">我的秘密</text></view>
+    <view class="report1">
+        <view class="report">
+             <text>我的信息</text>
+             <text>退出登录</text>
+        </view>
+    </view>
+</view>
+
+
+
