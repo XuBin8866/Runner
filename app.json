@@ -4,6 +4,7 @@
     "pages/user/user",
     "pages/activities/activities",
     "pages/activity_detail/activity_detail",
+    "pages/papers/papers",
     "pages/paper_detail/paper_detail",
     "pages/logs/logs"
 

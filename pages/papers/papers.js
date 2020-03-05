@@ -14,7 +14,7 @@ Page({
     var that=this
     //获取文章
     wx.request({
-      url: 'http://139.9.141.135:8080/json_test/swiper.json',
+      url: 'http://139.9.141.135:8080/json_test/papers.json',
       headers: {
         'Content-Type': 'application/json'
       },
