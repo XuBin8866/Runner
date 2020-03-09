@@ -12,7 +12,7 @@
     </view>
   </view>
   <view class="content">
-    <image src="{{paper_detail.showUrl}}" mode="aspectFill"></image>
+    <image src="{{paper_detail.showUrl}}" ></image>
     <text>{{paper_detail.content}}</text>
   </view>
 

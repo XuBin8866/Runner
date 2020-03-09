@@ -14,20 +14,7 @@
   border-bottom: 5px solid #ddd;
 }
 
-.header {
-  border-left-width: 3px;
-  border-left-style: solid;
-  border-left-color: limegreen;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80rpx;
-  width: 94%;
-  padding-left: 3%;
-  padding-right: 3%;
-  margin-top: 10rpx;
-  margin-bottom: 10rpx;
-}
+
 
 .content {
   height: 200rpx;

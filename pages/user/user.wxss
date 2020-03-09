@@ -2,7 +2,7 @@
 /* pages/myHome/myHome.wxss */
 /* 页面布局 */
 page{
-  background-color:#eeeeee;
+  background-color:#ffffff;
 
 }
 .container {
@@ -17,10 +17,11 @@ page{
 
 .myPerson{
   width: 100%;
-  height: 150rpx;
+  height: 173rpx;
   display: flex;
   flex-direction: row;
   margin-top: 25rpx;
+  border-bottom: 5px solid #ddd;
 }
 .name{
   margin-left: 50rpx;
@@ -32,14 +33,14 @@ page{
   border-radius: 50%;
   width: 150rpx;
   height: 150rpx;
-  margin-left: 40rpx;
+  margin-left: 38rpx;
 }
 .step{
   margin-top: 12rpx;
 }
 .myText{
   font-family: Arial, Verdana, sans-serif;
-  font-size: 20px;
+  font-size: 40rpx;
 }
 
 
@@ -52,16 +53,18 @@ page{
   display: flex;
   justify-content: space-around;
   margin-top: 15rpx;
+  margin-bottom: 12rpx;
 }
 .action2{
   width: 100%;
-  height: 50rpx;
+  height: 70rpx;
   border-left-width: 7rpx;
   border-left-style: solid;
   border-left-color: #7CFC00;
 }
 .action3{
   margin-top: 30rpx;
+  border-bottom: 5px solid #ddd;
 }
 .acText{
   margin-left: 18rpx;
@@ -85,7 +88,7 @@ page{
 }
 .inter3{
   margin-top: 22rpx;
-  
+  border-bottom: 5px solid #ddd;
 }
 
 .report{
@@ -95,6 +98,9 @@ page{
     display: flex; 
     flex-direction: column;
     justify-content: space-around;
+}
+.report2{
+  border-bottom: 5px solid #ddd;
 }
 
 .markPicture{
@@ -106,5 +112,7 @@ page{
 .mark{
   display: flex;
   justify-content: space-between;
-
+}
+.myButton{
+  border-radius: 50%;
 }

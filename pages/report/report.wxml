@@ -1,0 +1,19 @@
+<!--pages/report/report.wxml-->
+<view >
+      <block  wx:if="{{status==0}}" >
+        <text class="header">昨日运动报告</text>
+      </block>
+      <block  wx:else>
+        <text class="header">上周运动报告</text>
+      </block>
+      <view class="report">
+          <view>
+              <view><text>您一共走了:   {{step}}  步</text></view>
+              <view><text>相当于:   {{kll}}  卡路里</text></view>
+              <view><text>消耗了：  {{je}}  焦耳的热量</text></view>
+              <view><text>相当于:   {{sd}}  个深蹲</text></view>
+              <view><text>相当于:   {{ywqz}}  个仰卧起坐</text></view>
+              <view><text>帮助您减脂:   {{zf}}  KG</text></view>
+          </view>
+      </view>
+</view>

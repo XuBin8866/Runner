@@ -1,0 +1,46 @@
+{
+    "integral_rank":[
+      {
+        "userName":"张运楠",
+        "stuId":"20182427",
+        "college":"人工职能与现代化授课学院",
+        "sex":"男",
+        "intergral":"54"
+      },
+      {
+        "userName": "朱伟丽",
+        "stuId": "20182428",
+        "college": "人工职能与现代化授课学院",
+        "sex": "女",
+        "intergral": "50"
+      },
+      {
+        "userName": "万绮",
+        "stuId": "20182429",
+        "college": "人工职能与现代化授课学院",
+        "sex": "女",
+        "intergral": "58"
+      },
+      {
+        "userName": "谢川川",
+        "stuId": "20182327",
+        "college": "人工职能与现代化授课学院",
+        "sex": "男",
+        "intergral": "55"
+      },
+      {
+        "userName": "徐斌",
+        "stuId": "20182437",
+        "college": "人工职能与现代化授课学院",
+        "sex": "男",
+        "intergral": "79"
+      },
+      {
+        "userName": "胡婷",
+        "stuId": "20182427",
+        "college": "人工职能与现代化授课学院",
+        "sex": "女",
+        "intergral": "48"
+      }
+    ]
+}

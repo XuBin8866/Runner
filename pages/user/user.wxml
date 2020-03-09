@@ -1,10 +1,14 @@
-<!--pages/user/user.wxml-->
 <!--pages/myHome/myHome.wxml-->
 
 <!-- 个人中心一共有4个view  个人信息，活动，积分，我的报告 -->
 <view class="myPerson" >
     <!-- 个人信息 -->
-    <view><image src="{{myPicture}}" class="myPicture"></image></view>
+    <view >
+        <button class="myButton" size="mini" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录 </button>
+        <block wx:else>
+        <image bindtap="bindViewTap" class="myPicture" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        </block>    
+    </view>
     <view class="name">
         <view >
           <text class="myText">{{stuId}}</text>
@@ -27,17 +31,17 @@
 <view class="action3">
     <!-- 活动 -->
     <view class="action2"><text class="acText">三走活动</text></view>
-    <view class="action1">
-        <view class="action">
+    <view class="action1" >
+        <view class="action" bindtap="actAll">
           <text>已报名活动</text>
         </view>
-        <view class="action">
+        <view class="action" bindtap="actAll">
             <text>已参加活动</text>
         </view >
-        <view class="action">
+        <view class="action" bindtap="actAll">
             <text>我创建的活动</text>
         </view>
-        <view class="action">
+        <view class="action" bindtap="actAll">
             <text>创建活动</text>
         </view>
     </view>
@@ -52,22 +56,28 @@
           <text>运动积分</text>
           <view class="mark">
                <text>{{moInter}}</text>
+               <navigator url="../integral_detail/integral_detail?id={{markId}}">
                <image src="{{markPicture}}" class="markPicture"></image>
+               </navigator>
           </view>
         </view>
         <view class="inter">
           <text>活动积分</text>
           <view class="mark">
                <text>{{acInter}}</text>
+               <navigator url="../integral_detail/integral_detail?id={{actId}}">
                <image src="{{markPicture}}" class="markPicture"></image>
+               </navigator>
           </view>
          
         </view>
         <view class="inter">
-          <text>积分排行</text>
+          <text bindtap="integral_rank">积分排行</text>
           <view class="mark">
                <text>{{rnkInter}}</text>
+               <navigator url="../integral_detail/integral_detail?id={{rnkId}}">
                <image src="{{markPicture}}" class="markPicture"></image>
+               </navigator>
           </view>       
         </view>
         
@@ -80,30 +90,29 @@
     <view class="action2"><text class="acText">我的报告</text></view>
     <view class="report1">
         <view class="report">
-             <text>昨日活动报告</text>
-             <text>上周活动报告</text>
+             <text bindtap="yestReport" >昨日活动报告</text>
+             <text bindtap="lastReport">上周活动报告</text>
         </view>
     </view>
    
 </view>
-<view>
+<view class="report2">
     <view class="action2"><text class="acText">每日打卡</text></view>
-     <view class="report">
+     <view bindtap="daily" class="report">
              <text>早检打卡</text>
     </view>
 </view>
 
 
-<view class="report2">
+<view  >
     <!-- 我的秘密 -->
     <view class="action2"><text class="acText">我的秘密</text></view>
     <view class="report1">
         <view class="report">
-             <text>我的信息</text>
-             <text>退出登录</text>
+             <text bindtap="user_detail">我的信息</text>
+             <text bindtap="quit">退出登录</text>
         </view>
     </view>
 </view>
-
 
 

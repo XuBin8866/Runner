@@ -1,0 +1,7 @@
+/* pages/report/report.wxss */
+.report{
+  margin-top: 100rpx;
+  display: flex;
+  justify-content: center;
+  
+}

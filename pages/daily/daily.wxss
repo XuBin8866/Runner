@@ -1,9 +1,5 @@
-/**app.wxss**/
-@import 'weui.wxss';
-.container {
-
-} 
-.header {
+/* pages/daily/daily.wxss */
+.daily {
   border-left-width: 3px;
   border-left-style: solid;
   border-left-color: limegreen;
@@ -16,4 +12,12 @@
   padding-right: 3%;
   margin-top: 10rpx;
   margin-bottom: 10rpx;
+  border-bottom: 5px solid #ddd;
+}
+.acText{
+  margin-left: 18rpx;
+  font-size: 125%; 
+}
+.daily1{
+  margin-top: 25rpx
 }

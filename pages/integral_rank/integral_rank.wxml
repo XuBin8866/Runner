@@ -1,0 +1,13 @@
+<view>
+    <text class="header">积分排行</text>
+</view> 
+    <view >
+      <block wx:for="{{integral_rank}}" >
+            <view class="table">         
+                <text >{{item.userName}}</text>        
+                <text >{{item.intergral}}</text>
+            </view>   
+      </block>
+    </view>
+ 
+  

@@ -1,0 +1,7 @@
+
+.table{
+  margin-top: 10rpx;
+   display: flex;
+   justify-content: space-around;
+   align-items: baseline;
+}

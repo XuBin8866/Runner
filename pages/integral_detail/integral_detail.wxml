@@ -1,0 +1,5 @@
+<!--pages/integral_detail/integral_detail.wxml-->
+<view>
+    <view class="action2"><text class="acText">{{explain_detail.title}}</text></view>
+    <view class="text"><text>{{explain_detail.detalis}}</text></view>
+</view>

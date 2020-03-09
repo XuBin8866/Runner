@@ -6,9 +6,18 @@
     "pages/activity_detail/activity_detail",
     "pages/papers/papers",
     "pages/paper_detail/paper_detail",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/daily/daily"
 
   ],
+  "permission":{
+    "scope.userLocation":{
+      "desc":"获取您的位置用于签到"
+    },
+    "scope.userInfo":{
+      "desc": "获取您的信息用于给您更好的体验"
+    }
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

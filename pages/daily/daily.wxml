@@ -1,0 +1,15 @@
+<view>
+    <view class="daily"><text class="acText">每日打卡</text></view>
+</view>
+<view class="daily1">  
+    <button bindtap="mark">签到</button>
+    <button bindtap="lookAd">查看位置信息</button>
+</view> 
+    <map 
+         longitude="{{longi}}" 
+         latitude="{{lati}}" 
+         scale="13" 
+         circles="{{circles}}" 
+         style="width:100%;height:500rpx"
+         show-location
+    ></map>

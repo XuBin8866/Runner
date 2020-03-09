@@ -1,0 +1,21 @@
+page{
+  
+}
+.action2{
+  width: 100%;
+  height: 50rpx;
+  border-left-width: 7rpx;
+  border-left-style: solid;
+  border-left-color: #7CFC00;
+}
+.acText{
+  margin-left: 18rpx;
+  font-size: 125%; 
+}
+.text{
+  margin-top: 50rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 10pt;
+  color: #353535
+}

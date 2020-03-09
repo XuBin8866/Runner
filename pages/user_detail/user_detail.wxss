@@ -1,0 +1,19 @@
+/* pages/user_detail/user_detail.wxss */
+.all{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  margin-left: 60rpx
+}
+.detail{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+.detail1{
+    margin-left: 50rpx;
+}

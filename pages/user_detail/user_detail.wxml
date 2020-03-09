@@ -1,0 +1,31 @@
+<!--pages/user_detail/user_detail.wxml-->
+
+<view class="header">
+    <text>个人信息</text>
+</view> 
+<view class="all">
+      <view class="detail">
+          <view>学校</view>
+          <view class="detail1">{{user_detail.schoolName}}</view>
+      </view>
+      <view class="detail">
+          <view>学院</view>
+          <view class="detail1">{{user_detail.college}}</view>
+      </view>
+      <view class="detail">
+          <view>姓名</view>
+          <view class="detail1">{{user_detail.userName}}</view>
+      </view>
+      <view class="detail">
+          <view>学号</view>
+          <view class="detail1">{{user_detail.stuId}}</view>
+      </view>
+      <view class="detail">
+          <view>性别</view>
+          <view class="detail1">{{user_detail.sex}}</view>
+      </view>
+      <view class="detail">
+          <view>班级</view>
+          <view class="detail1">{{user_detail.class}}</view>
+      </view>    
+</view>
